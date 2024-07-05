@@ -14,7 +14,7 @@ library(tidyr)
 
 
 #load shape file for Valle
-suramerica=shapefile("C:/Users/david.arango/OneDrive - PUJ Cali/Desktop/DELIA/scripts_final_paper/SUDAMERICA_ADM2/sudamerica_adm2.shp")
+suramerica=shapefile("C:/Desktop/DELIA/scripts_final_paper/SUDAMERICA_ADM2/sudamerica_adm2.shp")
 colombia=suramerica[which(suramerica$ADM0=="COLOMBIA"),]
 valle=colombia[colombia$ADM1=="Valle del Cauca",]
 valle=valle[valle$AREA>0.003,]
