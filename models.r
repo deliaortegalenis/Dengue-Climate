@@ -28,7 +28,7 @@ g <- inla.read.graph(filename = "valle.adj")
 
 #load data 
 library(readxl)
-data <- read_excel("C:/Users/david.arango/OneDrive - PUJ Cali/Desktop/DELIA/scripts_final_paper/base_final_3_vr3")
+data <- read_excel("C:/Desktop/DELIA/scripts_final_paper/base_final_3_vr3")
 data <- data[order(data$Año),]
 data$tmax2 <- 1.65+(1.16*data$tmax2)
 data$tmin2 <- (-13.43)+(1.81*data$tmin2)
